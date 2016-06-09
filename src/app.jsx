@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react'
 import { Router, Route, hashHistory, Link, IndexRoute, IndexLink } from 'react-router'
 import Growler from './components/Growler' // original repo needs babel es7 features https://github.com/posabsolute/redux-flash-notification
@@ -29,8 +31,7 @@ const Navigation = () => (
   </nav>
 )
 
-const Main = ({children}) => {
-  return (  
+const Main = ({children}) => (
     <div>
       <header>
         <Growler />
@@ -38,8 +39,7 @@ const Main = ({children}) => {
       </header>
       {children}
     </div>
-  )
-}
+)
 
 
 export default class App extends React.Component {
