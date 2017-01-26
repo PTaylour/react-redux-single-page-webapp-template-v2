@@ -6,9 +6,6 @@ import Growler from './components/Growler' // original repo needs babel es7 feat
 import IndexRouteContainer from './containers/IndexRouteContainer.jsx'
 
 
-require('rd-ux-bootstrap')
-require('./styles/index.scss')
-
 
 const Foo = () => (
     <div>
@@ -18,7 +15,7 @@ const Foo = () => (
 
 const Navigation = () => (
   <nav className='navbar navbar-light bg-faded'>
-    <IndexLink className='navbar-brand' to='/'>IPStudio Template</IndexLink>
+    <IndexLink className='navbar-brand' to='/'>Home Page</IndexLink>
     <ul className='nav navbar-nav'>
     </ul>
     <div className='form-inline pull-sm-right'>
