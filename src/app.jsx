@@ -6,19 +6,22 @@ import Growler from './components/Growler' // original repo needs babel es7 feat
 import IndexRouteContainer from './containers/IndexRouteContainer.jsx'
 
 
+require('./styles/gutenberg/style/index.scss')
 
 const Foo = () => (
     <div>
-        <h1>Foo Bar Page!</h1>
+      <h1>Foo Bar Page!</h1>
+      <h2>Love the Foo Bar</h2>
+      <p>Paragraph foo bar</p>
     </div>
 )
 
 const Navigation = () => (
-  <nav className='navbar navbar-light bg-faded'>
-    <IndexLink className='navbar-brand' to='/'>Home Page</IndexLink>
-    <ul className='nav navbar-nav'>
+  <nav className=''>
+    <IndexLink className='' to='/'>Home Page</IndexLink>
+    <ul className=''>
     </ul>
-    <div className='form-inline pull-sm-right'>
+    <div className=''>
       <Link to='/foo/bar'>
         <button className='btn btn-primary-outline' type='submit'>
           BAR
